@@ -61,10 +61,10 @@
 
         <nav id="navmenu" class="navmenu">
           <ul> 
-            <li><a href="#hero">Profil</a></li>
-            <li><a href="#about">A Propos</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#projets">Projets</a></li>
+            <li><a href="#Profil">Profil</a></li>
+            <li><a href="#Apropos">A Propos</a></li>
+            <li><a href="#Competeces">Compétences</a></li>
+            <li><a href="#team">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
            
           </ul>
@@ -79,8 +79,8 @@
         <h1>Alioune Badara NDIAYE</h1>
         <h2>Référent Digital</h2>
         <hr class="hr1">
-        <button type="button" class="btn btn-warning custom-btn-1">Telecharger cv</button> 
-        <button type="button" class="btn btn-warning custom-btn-2">Contactez-Moi</button>
+        <a href="pdf/Cv- ALIOUNE BADARA NDIAYE.pdf" class="btn btn-warning custom-btn-1" download>Voir Mon CV</a> 
+        <a href="#contact"><button type="button" class="btn btn-warning custom-btn-2">Contactez-Moi</button></a>
     </div>
     <div class="me">
         <img src="images/fond1.png" class="ucab">
@@ -540,14 +540,267 @@
 
   </section><!-- /Portfolio Section -->
 
+ <!-- Clients Section -->
+<section id="clients" class="clients section light-background">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <!-- Section Title -->
+        <h2 class="section-title">Les Outils</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div id="clientsSlider" class="d-flex overflow-hidden position-relative">
+
+          <!-- Slider wrapper -->
+          <div class="slider-track d-flex">
+            <div class="slide-item"><img src="images/figma.png" class="img-fluid" alt="Figma"></div>
+            <div class="slide-item"><img src="images/canva.jpg" class="img-fluid" alt="Canva"></div>
+            <div class="slide-item"><img src="images/premierepro.png" class="img-fluid" alt="Premiere Pro"></div>
+            <div class="slide-item"><img src="images/illustrator.jpg" class="img-fluid" alt="Illustrator"></div>
+            <div class="slide-item"><img src="images/xampp.png" class="img-fluid" alt="XAMPP"></div>
+            <div class="slide-item"><img src="images/photoshop (2).png" class="img-fluid" alt="Photoshop"></div>
+            <div class="slide-item"><img src="images/wordpress.png" class="img-fluid" alt="WordPress"></div>
+            <div class="slide-item"><img src="images/buffer.png" class="img-fluid" alt="Buffer"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Clients Section -->
+
+<!-- Add some CSS for styling -->
+<style>
+  #clientsSlider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider-track {
+    display: flex;
+    animation: slide 15s ease-in-out infinite; /* Adds smooth acceleration and deceleration */
+    width: calc(150px * 8); /* Adjusts width based on number of items */
+  }
+
+  .slide-item {
+    flex: 0 0 auto;
+    width: 150px; /* Keeps the image smaller */
+    margin-right: 20px;
+  }
+
+  .slide-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures images maintain aspect ratio */
+  }
+
+  /* Keyframes for smoother animation */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(0);
+    }
+    90% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Title Styling */
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #12505d;
+  }
+</style>
+
+ <!-- Contact Section -->
+ <section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div><span>Contactez-</span> <span class="description-title">Nous</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Address</h3>
+            <p>Pikine Dakar Senegal</p>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Telephone</h3>
+            <p>+221 78 106 80 81</p>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email Us</h3>
+            <p>Badara2019ndiaye@gmail.com</p>
+          </div>
+        </div><!-- End Info Item -->
+
+      </div>
+
+      <div class="col-lg-8">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Envoyer Message</button>
+            </div>
+
+          </div>
+        </form>
+      </div><!-- End Contact Form -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Contact Section -->
 
 
 
+<footer id="footer" class="footer" style="background-color:#f39121;">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename"><img src="images/logo 3blanc.png" style="width: 60px;"></span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p>Sicap</p>
+          <p>Pikine Dakar Senegal</p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+221 78 106 80 81</span></p>
+          <p><strong>Email:</strong> <span>Badara2019ndiaye@gmail.com</span></p>
+        </div>
+        <div class="social-links d-flex mt-4">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">A Propos</a></li>
+          <li><a href="#">Competences</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Product Management</a></li>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">Graphic Design</a></li>
+        </ul>
+      </div>
+
+      
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">Alioune Badara</strong> <span>All Rights Reserved</span></p>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you've purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      Designed by <a href="https://bootstrapmade.com/">Alioune Badara</a>
+    </div>
+  </div>
+
+</footer>
 
 
 
-  
+<style>
+/* Style général pour la section */
+#Profil {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Conteneur des images */
+.me {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* Style pour l'image de fond */
+.me img.ucab {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+/* Style pour l'image de l'acteur, centré au milieu */
+.me img.acteur {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: auto;
+    max-width: 50%;
+ }
 
 
-
-  
+</style>

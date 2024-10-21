@@ -1,8 +1,11 @@
+/* 
+
 .profile{
     margin-left: 0;
     margin-top: 0;
 
 }
+
 
 .profile h1{
     position: relative;
@@ -30,7 +33,7 @@
 }
 
 
-/* END PROFIL */
+END PROFIL */
 
 /* Style pour le bouton "Télécharger CV" */
 .profile .custom-btn-1 {
@@ -206,4 +209,284 @@
   padding: 15px;
   text-align: center;
 }
+
+
+/******* Les outiles  ********/
+
+
+
+
+/* Conteneur pour l'animation */
+.marquee-container {
+  width: 100%;
+  overflow: hidden; /* Cache l'extérieur de la zone visible */
+}
+
+/* Animation pour la ligne (<hr>) */
+.marquee hr {
+  width: 50%;
+  border: 2px solid #f39121;
+  animation: slide 5s linear infinite;
+}
+
+/* Définition de l'animation */
+@keyframes slide {
+  0% {
+      transform: translateX(100%); /* Commence à droite */
+  }
+  100% {
+      transform: translateX(-100%); /* Finit à gauche */
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-item+.info-item {
+  margin-top: 40px;
+}
+
+.contact .info-item i {
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact .info-item h3 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.contact .info-item:hover i {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.contact .php-email-form {
+  height: 100%;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+.portfolio-content img {
+  width: 100%;
+  height: 250px; /* Vous pouvez ajuster la hauteur selon vos préférences */
+  object-fit: cover; /* Pour que l'image conserve son ratio d'aspect */
+  border-radius: 8px; /* Pour arrondir les bords, si vous le souhaitez */
+}
+
+.portfolio-content img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajoute des transitions pour un effet fluide */
+}
+
+.portfolio-content img:hover {
+  transform: scale(1.05); /* Zoom léger au survol */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ajout d'une ombre pour donner un effet de profondeur */
+}
+
+.portfolio-content .portfolio-info {
+  opacity: 0; /* Masquer les infos par défaut */
+  transition: opacity 0.3s ease; /* Ajoute une transition pour l'apparition des infos */
+}
+
+.portfolio-content:hover .portfolio-info {
+  opacity: 1; /* Affiche les infos au survol */
+}
+
+/* Réduction de la taille des cartes */
+.team-member {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation sur hover */
+  margin: 15px 0;
+}
+
+.team-member:hover {
+  transform: scale(1.05); /* Zoom léger sur hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
+}
+
+.member-img {
+  width: 100%;
+  height: 200px; /* Réduction de la hauteur de l'image */
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+
+.member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.member-info h4 {
+  font-size
+ }
+ footer{
+  background-color:#fff;
+ }
+
+ /*/* Base Styles */
+#Profil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.profile {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.me {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.ucab {
+  width: 100%;
+  max-width: 450px; /* Taille augmentée */
+}
+
+.acteur {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px; /* Taille augmentée */
+}
+
+.btn {
+  margin: 10px;
+}
+
+.hr1 {
+  width: 50%;
+  margin: 0 auto 20px;
+  border: 2px solid #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #Profil {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .profile, .me {
+      flex: 100%;
+  }
+
+  .acteur {
+      position: relative;
+      transform: translateX(0);
+      width: 200px; /* Taille augmentée pour tablettes */
+  }
+
+  .ucab {
+      display: none;
+  }
+
+  .btn {
+      width: 100%;
+      margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 24px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  .btn {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+
+  .acteur {
+      width: 150px; /* Taille augmentée pour petits écrans */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
